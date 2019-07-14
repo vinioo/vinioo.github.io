@@ -71,6 +71,7 @@ $red: #dc4a4a;
 .btn {
     background: $red;
     width: 120px;
+    height: 45px;
     outline: none;
     border-radius: 40px;
     border: none;
@@ -282,6 +283,10 @@ $red: #dc4a4a;
         }
     }
 }
+.contact {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .contact .container {
     .secondTitle h1 {
         color: $black;
@@ -297,8 +302,10 @@ $red: #dc4a4a;
         height: 300px;
         .contactIcons {
             .circleIcon {
-                width: 30px;
-                height: 30px;
+                width: 70px;
+                height: 70px;
+                border-radius: 35px;
+                background: white;
             }
             width: 60%;
             height: 100%;
@@ -325,6 +332,18 @@ $red: #dc4a4a;
             #form {
                 display: flex;
                 flex-direction: column;
+            }
+            input {
+              height: 40px;
+              margin-bottom: 8px;
+              font-family: monospace;
+            }
+            textarea {
+              height: 100px;
+            }
+            .btn {
+              margin-top: 6px;
+              align-self: flex-end;
             }
         }
     }

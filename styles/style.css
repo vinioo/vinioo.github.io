@@ -77,6 +77,7 @@ ul {
 .btn {
   background: #dc4a4a;
   width: 120px;
+  height: 45px;
   outline: none;
   border-radius: 40px;
   border: none;
@@ -400,6 +401,11 @@ ul {
   width: 100%;
 }
 
+.contact {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .contact .container .secondTitle h1 {
   color: #100f0f;
   font-size: 66px;
@@ -443,8 +449,10 @@ ul {
 }
 
 .contact .container .contactContent .contactIcons .circleIcon {
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background: white;
 }
 
 .contact .container .contactContent .contactIcons p {
@@ -478,5 +486,21 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contact .container .contactContent .contactForm input {
+  height: 40px;
+  margin-bottom: 8px;
+  font-family: monospace;
+}
+
+.contact .container .contactContent .contactForm textarea {
+  height: 100px;
+}
+
+.contact .container .contactContent .contactForm .btn {
+  margin-top: 6px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
