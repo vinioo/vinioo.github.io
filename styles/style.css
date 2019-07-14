@@ -4,6 +4,7 @@ html {
   padding: 0;
   max-width: 2560px;
   margin: 0 auto;
+  background: #eaeaea;
 }
 
 .container {
@@ -222,7 +223,7 @@ ul {
 }
 
 .secondPage {
-  height: auto;
+  height: 1600px;
   background: url("../src/images/Page3.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -326,18 +327,24 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.secondPage .secondContent .cardLeft .cardRight .buttons {
+.secondPage .secondContent .cardRight .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .secondPage .secondContent .cardLeft .cardContent .cardText .buttons > button {
@@ -353,7 +360,7 @@ ul {
 }
 
 .secondPage .secondContent .cardRight .cardContent .cardText {
-  padding: 0px 0px 25px 0px;
+  padding-right: 25px;
 }
 
 .websites .container .secondTitle h1 {
@@ -396,5 +403,80 @@ ul {
 .contact .container .secondTitle h1 {
   color: #100f0f;
   font-size: 66px;
+}
+
+.contact .container .secondTitle p {
+  color: #100f0f;
+  margin-bottom: 50px;
+}
+
+.contact .container .contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 300px;
+}
+
+.contact .container .contactContent .contactIcons {
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .contactContent .contactIcons .circleIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact .container .contactContent .contactIcons p {
+  color: #100f0f;
+  width: 100%;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .contactContent .contactForm {
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact .container .contactContent .contactForm #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */

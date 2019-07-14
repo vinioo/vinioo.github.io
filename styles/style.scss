@@ -5,6 +5,7 @@ html {
     padding: 0;
     max-width: 2560px;
     margin: 0 auto;
+    background: #eaeaea;
 }
 
 .container {
@@ -155,7 +156,7 @@ $red: #dc4a4a;
     }
 }
 .secondPage {
-    height: auto;
+    height: 1600px;
     background: url('../src/images/Page3.png');
     background-position: top;
     background-repeat: no-repeat;
@@ -230,13 +231,15 @@ $red: #dc4a4a;
         .cardLeft {
             .buttons {
                 display: flex;
-                justify-content: flex-end;
+                justify-content: space-between;
+                align-items: center;
             }
-            .cardRight {
-                .buttons {
-                    display: flex;
-                    justify-content: flex-start;
-                }
+        }
+        .cardRight {
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
         }
         .cardLeft .cardContent .cardText .buttons > button {
@@ -249,7 +252,7 @@ $red: #dc4a4a;
             padding: 0px 0px 0px 25px;
         }
         .cardRight .cardContent .cardText {
-            padding: 0px 0px 25px 0px;
+            padding-right: 25px;
         }
     }
 }
@@ -283,5 +286,46 @@ $red: #dc4a4a;
     .secondTitle h1 {
         color: $black;
         font-size: 66px;
+    }
+    .secondTitle p {
+        color: $black;
+        margin-bottom: 50px;
+    }
+    .contactContent {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        .contactIcons {
+            .circleIcon {
+                width: 30px;
+                height: 30px;
+            }
+            width: 60%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            p {
+                color: $black;
+                width: 100%;
+                text-align: center;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .contactForm {
+            width: 40%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            #form {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }
