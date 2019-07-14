@@ -2,6 +2,8 @@ body,
 html {
   margin: 0;
   padding: 0;
+  max-width: 2560px;
+  margin: 0 auto;
 }
 
 .container {
@@ -55,8 +57,29 @@ ul {
   height: 22px;
 }
 
+#line {
+  width: 100%;
+  border: 0.32px solid rgba(250, 250, 250, 0.041);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#darkLine {
+  width: 100%;
+  border: 0.5px solid rgba(75, 75, 75, 0.1);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .btn {
-  background: red;
+  background: #dc4a4a;
+  width: 120px;
+  outline: none;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
 }
 
 .home {
@@ -199,8 +222,9 @@ ul {
 }
 
 .secondPage {
-  height: 100vh;
+  height: auto;
   background: url("../src/images/Page3.png");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -238,14 +262,7 @@ ul {
   font-weight: normal;
   line-height: 32px;
   margin-top: 4px;
-}
-
-.secondPage .secondTitle #line {
-  width: 100%;
-  border: 0.32px solid rgba(250, 250, 250, 0.041);
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  margin-bottom: 20px;
 }
 
 .secondPage .secondContent {
@@ -260,7 +277,7 @@ ul {
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 52px;
+  margin-top: 32px;
 }
 
 .secondPage .secondContent .cardContent {
@@ -290,7 +307,6 @@ ul {
 .secondPage .secondContent .cardContent .cardText {
   width: 65%;
   height: 100%;
-  padding: 0px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #100f0f;
@@ -304,5 +320,81 @@ ul {
   font-weight: normal;
   -webkit-box-shadow: 0px 0.25px 0px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0.25px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.secondPage .secondContent .cardLeft .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.secondPage .secondContent .cardLeft .cardRight .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.secondPage .secondContent .cardLeft .cardContent .cardText .buttons > button {
+  margin-left: 12px;
+}
+
+.secondPage .secondContent .cardRight .cardContent .cardText .buttons > button {
+  margin-right: 12px;
+}
+
+.secondPage .secondContent .cardLeft .cardContent .cardText {
+  padding: 0px 0px 0px 25px;
+}
+
+.secondPage .secondContent .cardRight .cardContent .cardText {
+  padding: 0px 0px 25px 0px;
+}
+
+.websites .container .secondTitle h1 {
+  color: #100f0f;
+  font-size: 66px;
+}
+
+.websites .container .secondTitle p {
+  color: #100f0f;
+  margin-bottom: 50px;
+}
+
+.websitesContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.websitesContent .website {
+  width: 32%;
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: 26px;
+  background: red;
+}
+
+.websitesContent .website img {
+  width: 100%;
+}
+
+.contact .container .secondTitle h1 {
+  color: #100f0f;
+  font-size: 66px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,8 @@ body,
 html {
     margin: 0;
     padding: 0;
+    max-width: 2560px;
+    margin: 0 auto;
 }
 
 .container {
@@ -50,15 +52,29 @@ ul {
     width: 22px;
     height: 22px;
 }
-
-.btn {
-  background: red;
+#line {
+    width: 100%;
+    border: 0.32px solid rgba(250, 250, 250, 0.041);
+    flex: 1;
+}
+#darkLine {
+    width: 100%;
+    border: 0.5px solid rgba(75, 75, 75, 0.1);
+    flex: 1;
 }
 
 // Vars
 $black: #100f0f;
-$red: #D74848;
+$red: #dc4a4a;
 
+.btn {
+    background: $red;
+    width: 120px;
+    outline: none;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
 .home {
     background: url('../src/images/Homepage.svg');
     background-repeat: no-repeat;
@@ -139,8 +155,9 @@ $red: #D74848;
     }
 }
 .secondPage {
-    height: 100vh;
+    height: auto;
     background: url('../src/images/Page3.png');
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -166,11 +183,7 @@ $red: #D74848;
             font-weight: normal;
             line-height: 32px;
             margin-top: 4px;
-        }
-        #line {
-            width: 100%;
-            border: 0.32px solid rgba(250, 250, 250, 0.041);
-            flex: 1;
+            margin-bottom: 20px;
         }
     }
     .secondContent {
@@ -182,7 +195,7 @@ $red: #D74848;
             height: 300px;
             padding: 20px;
             box-sizing: border-box;
-            margin-top: 52px;
+            margin-top: 32px;
         }
         .cardContent {
             box-sizing: border-box;
@@ -202,7 +215,6 @@ $red: #D74848;
             .cardText {
                 width: 65%;
                 height: 100%;
-                padding: 0px 25px;
                 box-sizing: border-box;
                 color: $black;
                 h4 {
@@ -215,5 +227,61 @@ $red: #D74848;
                 }
             }
         }
+        .cardLeft {
+            .buttons {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .cardRight {
+                .buttons {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
+        .cardLeft .cardContent .cardText .buttons > button {
+            margin-left: 12px;
+        }
+        .cardRight .cardContent .cardText .buttons > button {
+            margin-right: 12px;
+        }
+        .cardLeft .cardContent .cardText {
+            padding: 0px 0px 0px 25px;
+        }
+        .cardRight .cardContent .cardText {
+            padding: 0px 0px 25px 0px;
+        }
+    }
+}
+.websites .container {
+    .secondTitle h1 {
+        color: $black;
+        font-size: 66px;
+    }
+    .secondTitle p {
+        color: $black;
+        margin-bottom: 50px;
+    }
+}
+.websitesContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    .website {
+        width: 32%;
+        height: 180px;
+        margin-top: 10px;
+        margin-bottom: 26px;
+        background: red;
+        img {
+            width: 100%;
+        }
+    }
+}
+.contact .container {
+    .secondTitle h1 {
+        color: $black;
+        font-size: 66px;
     }
 }
