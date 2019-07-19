@@ -5,6 +5,9 @@ html {
   max-width: 2560px;
   margin: 0 auto;
   background: #eaeaea;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -194,7 +197,16 @@ ul {
   font-size: 12px;
 }
 
+.transition {
+  position: fixed !important;
+  top: -2px !important;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
 .navbar {
+  position: absolute;
+  top: 2px;
   width: 100%;
   height: 60px;
   background: #0e0d0d;
