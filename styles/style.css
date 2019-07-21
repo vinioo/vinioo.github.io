@@ -233,6 +233,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .navbar ul {
@@ -335,10 +336,21 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .secondPage .secondContent .cardContent .cardImage img {
   width: 100%;
+  position: absolute;
+  background: white;
+}
+
+.secondPage .secondContent .cardContent .cardImage img:hover {
+  opacity: 0;
 }
 
 .secondPage .secondContent .cardContent .cardText {
@@ -359,7 +371,8 @@ ul {
           box-shadow: 0px 0.25px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
-.secondPage .secondContent .cardContent .cardText p {
+.secondPage .secondContent .cardContent .cardText .details {
+  min-height: 70px;
   max-height: 70px;
   overflow: auto;
 }
@@ -617,6 +630,14 @@ ul {
     width: 100%;
     margin: 0 auto;
   }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage img,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage img {
+    position: relative;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage img:hover,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage img:hover {
+    opacity: 10;
+  }
   .secondPage .container .secondContent .cardLeft .cardContent .cardText,
   .secondPage .container .secondContent .cardRight .cardContent .cardText {
     width: 100%;
@@ -682,6 +703,9 @@ ul {
     border: none;
     width: 100%;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -745,6 +769,14 @@ ul {
   .secondPage .container .secondContent .cardRight .cardContent .cardImage {
     width: 100%;
     margin: 0 auto;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage img,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage img {
+    position: relative;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage img:hover,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage img:hover {
+    opacity: 10;
   }
   .secondPage .container .secondContent .cardLeft .cardContent .cardText,
   .secondPage .container .secondContent .cardRight .cardContent .cardText {
@@ -812,6 +844,9 @@ ul {
     border: none;
     width: 100%;
   }
+  .mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -875,6 +910,14 @@ ul {
   .secondPage .container .secondContent .cardRight .cardContent .cardImage {
     width: 100%;
     margin: 0 auto;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage img,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage img {
+    position: relative;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage img:hover,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage img:hover {
+    opacity: 10;
   }
   .secondPage .container .secondContent .cardLeft .cardContent .cardText,
   .secondPage .container .secondContent .cardRight .cardContent .cardText {
@@ -941,6 +984,9 @@ ul {
     margin: 0;
     border: none;
     width: 100%;
+  }
+  .mobile {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
