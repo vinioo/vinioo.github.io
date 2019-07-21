@@ -200,8 +200,8 @@ ul {
 .transition {
   position: fixed !important;
   top: -2px !important;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar {
@@ -236,6 +236,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0;
 }
 
 .navbar ul > li > a {
@@ -533,5 +534,370 @@ ul {
   margin-top: 6px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@media (max-width: 576px) {
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  .headerBox {
+    width: 220px;
+  }
+  .homeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeContainer h1 {
+    font-size: 112px;
+    padding: 0;
+    margin: 0;
+  }
+  .homeContainer h4 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .homeFooter p {
+    color: #f5f5f5;
+    font-size: 10px;
+  }
+  .secondTitle {
+    padding-top: 5em !important;
+  }
+  .secondTitle h1 {
+    font-size: 42px !important;
+  }
+  .secondTitle p {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent, .secondPage .container .secondContent .cardRight .cardContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage, .secondPage .container .secondContent .cardRight .cardContent .cardImage {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText, .secondPage .container .secondContent .cardRight .cardContent .cardText {
+    width: 100%;
+    height: 100%;
+    padding: 9.5px;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
+    font-size: 28px;
+  }
+  .secondPage .container .secondContent .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondPage .container .secondContent .buttons .buttonsContainer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .secondPage .container .secondContent .buttons .tags {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 6px;
+  }
+  .secondPage .container .secondContent .cardLeft {
+    height: 500px;
+  }
+  .secondPage .container .secondContent .cardRight {
+    height: 500px;
+  }
+  .secondPage .container .secondContent .cardRight .cardContent .cardText {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .websites .container .websitesContent .website {
+    width: 99%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  .websites .container .websitesContent .website img {
+    width: 100%;
+  }
+  .contact .container .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .container .contactContent .contactForm {
+    width: 100%;
+    padding: 0;
+  }
+  .contact .container .contactContent .contactIcons {
+    margin: 0;
+    border: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+  .headerBox {
+    width: 240px;
+  }
+  .homeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeContainer h1 {
+    font-size: 152px;
+    padding: 0;
+    margin: 0;
+  }
+  .homeContainer h4 {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .homeFooter p {
+    color: #f5f5f5;
+    font-size: 10px;
+  }
+  .secondTitle {
+    padding-top: 6em !important;
+  }
+  .secondTitle h1 {
+    font-size: 42px !important;
+  }
+  .secondTitle p {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent, .secondPage .container .secondContent .cardRight .cardContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage, .secondPage .container .secondContent .cardRight .cardContent .cardImage {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText, .secondPage .container .secondContent .cardRight .cardContent .cardText {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
+    font-size: 28px;
+  }
+  .secondPage .container .secondContent .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondPage .container .secondContent .buttons .buttonsContainer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .secondPage .container .secondContent .buttons .tags {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 6px;
+  }
+  .secondPage .container .secondContent .cardLeft {
+    height: 600px;
+  }
+  .secondPage .container .secondContent .cardRight {
+    height: 600px;
+  }
+  .secondPage .container .secondContent .cardRight .cardContent .cardText {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .websites .container .websitesContent .website {
+    width: 49%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  .websites .container .websitesContent .website img {
+    width: 100%;
+  }
+  .contact .container .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .container .contactContent .contactForm {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .contact .container .contactContent .contactIcons {
+    margin: 0;
+    border: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+  .headerBox {
+    width: 250px;
+  }
+  .homeContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeContainer h1 {
+    font-size: 168px;
+    padding: 0;
+    margin: 0;
+  }
+  .homeContainer h4 {
+    font-size: 18.5px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .homeFooter p {
+    color: #f5f5f5;
+    font-size: 10px;
+  }
+  .secondTitle {
+    padding-top: 6em !important;
+  }
+  .secondTitle h1 {
+    font-size: 42px !important;
+  }
+  .secondTitle p {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent, .secondPage .container .secondContent .cardRight .cardContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage, .secondPage .container .secondContent .cardRight .cardContent .cardImage {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText, .secondPage .container .secondContent .cardRight .cardContent .cardText {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
+    font-size: 28px;
+  }
+  .secondPage .container .secondContent .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondPage .container .secondContent .buttons .buttonsContainer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .secondPage .container .secondContent .buttons .tags {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 6px;
+  }
+  .secondPage .container .secondContent .cardLeft {
+    height: 600px;
+  }
+  .secondPage .container .secondContent .cardRight {
+    height: 600px;
+  }
+  .secondPage .container .secondContent .cardRight .cardContent .cardText {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .websites .container .websitesContent .website {
+    width: 49%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+  .websites .container .websitesContent .website img {
+    width: 100%;
+  }
+  .contact .container .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .container .contactContent .contactForm {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .contact .container .contactContent .contactIcons {
+    margin: 0;
+    border: none;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
