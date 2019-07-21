@@ -95,6 +95,11 @@ ul {
   cursor: pointer;
 }
 
+.btn p {
+  padding: 0;
+  margin: 0;
+}
+
 .home {
   background: url("../src/images/Homepage.svg");
   background-repeat: no-repeat;
@@ -343,6 +348,11 @@ ul {
   font-weight: normal;
   -webkit-box-shadow: 0px 0.25px 0px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0.25px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.secondPage .secondContent .cardContent .cardText p {
+  max-height: 70px;
+  overflow: auto;
 }
 
 .secondPage .secondContent .cardLeft .buttons {
@@ -604,6 +614,9 @@ ul {
   .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
     font-size: 28px;
   }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText p, .secondPage .container .secondContent .cardRight .cardContent .cardText p {
+    max-height: inherit;
+  }
   .secondPage .container .secondContent .buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -724,6 +737,9 @@ ul {
   }
   .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
     font-size: 28px;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText p, .secondPage .container .secondContent .cardRight .cardContent .cardText p {
+    max-height: inherit;
   }
   .secondPage .container .secondContent .buttons {
     -webkit-box-orient: vertical;
@@ -846,6 +862,9 @@ ul {
   }
   .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
     font-size: 28px;
+  }
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText p, .secondPage .container .secondContent .cardRight .cardContent .cardText p {
+    max-height: auto;
   }
   .secondPage .container .secondContent .buttons {
     -webkit-box-orient: vertical;
