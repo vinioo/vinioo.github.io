@@ -591,7 +591,8 @@ ul {
     font-size: 16px !important;
     line-height: 20px !important;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent, .secondPage .container .secondContent .cardRight .cardContent {
+  .secondPage .container .secondContent .cardLeft .cardContent,
+  .secondPage .container .secondContent .cardRight .cardContent {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -602,19 +603,23 @@ ul {
     padding: 0;
     height: auto;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardImage, .secondPage .container .secondContent .cardRight .cardContent .cardImage {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage {
     width: 100%;
     margin: 0 auto;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText, .secondPage .container .secondContent .cardRight .cardContent .cardText {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText {
     width: 100%;
     height: 100%;
     padding: 9.5px;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
     font-size: 28px;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText p, .secondPage .container .secondContent .cardRight .cardContent .cardText p {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText p,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText p {
     max-height: inherit;
   }
   .secondPage .container .secondContent .buttons {
@@ -715,7 +720,8 @@ ul {
     font-size: 16px !important;
     line-height: 20px !important;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent, .secondPage .container .secondContent .cardRight .cardContent {
+  .secondPage .container .secondContent .cardLeft .cardContent,
+  .secondPage .container .secondContent .cardRight .cardContent {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -726,19 +732,23 @@ ul {
     padding: 0;
     height: auto;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardImage, .secondPage .container .secondContent .cardRight .cardContent .cardImage {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage {
     width: 100%;
     margin: 0 auto;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText, .secondPage .container .secondContent .cardRight .cardContent .cardText {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText {
     width: 100%;
     height: 100%;
     padding: 18px;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
     font-size: 28px;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText p, .secondPage .container .secondContent .cardRight .cardContent .cardText p {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText p,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText p {
     max-height: inherit;
   }
   .secondPage .container .secondContent .buttons {
@@ -840,7 +850,8 @@ ul {
     font-size: 16px !important;
     line-height: 20px !important;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent, .secondPage .container .secondContent .cardRight .cardContent {
+  .secondPage .container .secondContent .cardLeft .cardContent,
+  .secondPage .container .secondContent .cardRight .cardContent {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -851,19 +862,23 @@ ul {
     padding: 0;
     height: auto;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardImage, .secondPage .container .secondContent .cardRight .cardContent .cardImage {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardImage,
+  .secondPage .container .secondContent .cardRight .cardContent .cardImage {
     width: 100%;
     margin: 0 auto;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText, .secondPage .container .secondContent .cardRight .cardContent .cardText {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText {
     width: 100%;
     height: 100%;
     padding: 18px;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4, .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText h4,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
     font-size: 28px;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText p, .secondPage .container .secondContent .cardRight .cardContent .cardText p {
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText p,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText p {
     max-height: auto;
   }
   .secondPage .container .secondContent .buttons {
