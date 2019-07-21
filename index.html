@@ -9,37 +9,43 @@
             href="https://fonts.googleapis.com/css?family=Amaranth|Open+Sans&display=swap"
             rel="stylesheet"
         />
-        <title>Document</title>
+        <title>Vinicius Oliveira - Web Developer</title>
     </head>
     <body>
-        <div class="home">
-            <div class="homeHeader">
+        <section class="home" id="home">
+            <header class="homeHeader">
                 <div class="headerBox">
-                    <img
-                        src="./src/images/icons8-github-50.png"
-                        alt=""
-                        srcset=""
-                        class="icon"
-                    />
+                    <a href="https://github.com/vinioo" target="_blank">
+                        <img
+                            src="./src/images/icons8-github-50.png"
+                            alt=""
+                            srcset=""
+                            class="icon"
+                        />
+                    </a>
+                    <a href="https://github.com/vinioo" target="_blank">
                     <img
                         src="./src/images/icons8-linkedin-30.png"
                         alt=""
                         srcset=""
                         class="icon"
                     />
+                    </a>
+                    <a href="https://github.com/vinioo" target="_blank">
                     <img
                         src="./src/images/icons8-important-mail-24.png"
                         alt=""
                         srcset=""
                         class="icon"
                     />
+                    </a>
                 </div>
-            </div>
-            <div class="homeContainer">
+            </header>
+            <main class="homeContainer">
                 <h1>Hello!</h1>
                 <h4>My name is Vinicius. I am a web developer.</h4>
-            </div>
-            <div class="homeFooter">
+            </main>
+            <section class="homeFooter">
                 <img
                     src="./src/images/icons8-double-down-48.png"
                     alt=""
@@ -47,17 +53,17 @@
                     id="seeMore"
                 />
                 <p>click here to see my work!</p>
-            </div>
-        </div>
+            </section>
+        </section>
         <div class="wrapper" style="position: relative">
         <div class="navbar">
             <ul>
-                <li><a>Home</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="secondPage">
+        <section class="secondPage" id="portfolio">
             <div class="container">
                 <div class="secondTitle">
                     <h1>Portfolio</h1>
@@ -206,7 +212,7 @@
                     </div>
                     Like it? check out all my projects on github
                 </div>
-                <div class="websites">
+                <section class="websites">
                     <div class="container">
                         <div class="secondTitle">
                             <h1>Websites</h1>
@@ -280,8 +286,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="contact">
+                </section>
+                <section class="contact" id="contact">
                     <div class="container">
                         <div class="secondTitle">
                             <h1>Contact</h1>
@@ -314,9 +320,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </div>
+        </section>
     </div>
         <script src="src/js/script.js"></script>
     </body>
