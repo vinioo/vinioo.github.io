@@ -237,7 +237,6 @@ $white: #f5f5f5;
       padding: 20px;
       box-sizing: border-box;
       margin-top: 32px;
-      
     }
     .cardContent {
       box-sizing: border-box;
@@ -246,8 +245,8 @@ $white: #f5f5f5;
       height: 100%;
       background: white;
       display: flex;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       .cardImage {
         width: 35%;
         height: 100%;
@@ -291,6 +290,18 @@ $white: #f5f5f5;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .buttonsContainer {
+          order: 2;
+        }
+        .tags {
+          font-size: 14px;
+          font-style: italic;
+          font-weight: 500;
+          border-bottom: 0.2px solid rgb(222, 222, 222);
+          p {
+            margin-bottom: 4px;
+          }
+        }
       }
     }
     .cardRight {
@@ -298,6 +309,15 @@ $white: #f5f5f5;
         display: flex;
         justify-content: space-between;
         align-items: center;
+      }
+      .tags {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 500;
+        border-bottom: 0.2px solid rgb(222, 222, 222);
+        p {
+          margin-bottom: 4px;
+        }
       }
     }
     .cardLeft .cardContent .cardText .buttons > button {
@@ -321,7 +341,7 @@ $white: #f5f5f5;
   padding: 20px;
   margin-top: 28px;
   margin-bottom: -1em;
-  a{
+  a {
     text-decoration: none;
     color: $black;
   }
@@ -334,17 +354,18 @@ $white: #f5f5f5;
     padding: 12px 16px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     img {
       margin-right: 10px;
-      transition: all .15s ease;
+      transition: all 0.15s ease;
     }
-    &:hover{
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
     }
     &:hover img {
-      opacity: .9;
+      opacity: 0.9;
       transform: scale(1.05);
     }
   }
@@ -365,9 +386,9 @@ $white: #f5f5f5;
   flex-direction: row;
   justify-content: space-between;
   .website {
+    position: relative;
     width: 32%;
-    height: 180px;
-    margin-top: 10px;
+    height: auto;
     margin-bottom: 26px;
     img {
       width: 100%;
@@ -568,7 +589,7 @@ $white: #f5f5f5;
   .mobile {
     display: none !important;
   }
-  .mobileText{
+  .mobileText {
     display: block;
     text-align: center;
   }
@@ -693,7 +714,7 @@ $white: #f5f5f5;
   .mobile {
     display: none !important;
   }
-  .mobileText{
+  .mobileText {
     display: block;
     text-align: center;
   }
@@ -818,8 +839,41 @@ $white: #f5f5f5;
   .mobile {
     display: none !important;
   }
-  .mobileText{
+  .mobileText {
     display: block;
     text-align: center;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.8);
+  border: 2.5px solid rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+.text {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  img {
+    border: none !important;
+    width: 45px;
+    height: 45px;
+  }
+}
+.website:hover{
+  .overlay  {
+    opacity: 1;
   }
 }

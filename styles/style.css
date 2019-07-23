@@ -401,6 +401,23 @@ ul {
           align-items: center;
 }
 
+.secondPage .secondContent .cardLeft .buttons .buttonsContainer {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.secondPage .secondContent .cardLeft .buttons .tags {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  border-bottom: 0.2px solid #dedede;
+}
+
+.secondPage .secondContent .cardLeft .buttons .tags p {
+  margin-bottom: 4px;
+}
+
 .secondPage .secondContent .cardRight .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,6 +428,17 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.secondPage .secondContent .cardRight .tags {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  border-bottom: 0.2px solid #dedede;
+}
+
+.secondPage .secondContent .cardRight .tags p {
+  margin-bottom: 4px;
 }
 
 .secondPage .secondContent .cardLeft .cardContent .cardText .buttons > button {
@@ -471,8 +499,8 @@ ul {
 
 .checkOut .checkOutContainer img {
   margin-right: 10px;
-  -webkit-transition: all .15s ease;
-  transition: all .15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 .checkOut .checkOutContainer:hover {
@@ -481,7 +509,7 @@ ul {
 }
 
 .checkOut .checkOutContainer:hover img {
-  opacity: .9;
+  opacity: 0.9;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -512,9 +540,9 @@ ul {
 }
 
 .websitesContent .website {
+  position: relative;
   width: 32%;
-  height: 180px;
-  margin-top: 10px;
+  height: auto;
   margin-bottom: 26px;
 }
 
@@ -1083,5 +1111,41 @@ ul {
     display: block;
     text-align: center;
   }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2.5px solid rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text img {
+  border: none !important;
+  width: 45px;
+  height: 45px;
+}
+
+.website:hover .overlay {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
