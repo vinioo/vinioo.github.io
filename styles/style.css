@@ -63,9 +63,9 @@ ul {
 }
 
 .icon:hover {
-  opacity: .8;
-  -webkit-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  opacity: 0.8;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
@@ -89,6 +89,14 @@ ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mobileText {
+  display: none;
 }
 
 .btn {
@@ -328,6 +336,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .secondPage .secondContent .cardContent .cardImage {
@@ -417,6 +429,63 @@ ul {
   padding-right: 25px;
 }
 
+.checkOut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin-top: 28px;
+  margin-bottom: -1em;
+}
+
+.checkOut a {
+  text-decoration: none;
+  color: #100f0f;
+}
+
+.checkOut .checkOutContainer {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px 16px;
+  background: white;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.checkOut .checkOutContainer img {
+  margin-right: 10px;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.checkOut .checkOutContainer:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.checkOut .checkOutContainer:hover img {
+  opacity: .9;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .websites .container .secondTitle h1 {
   color: #100f0f;
   font-size: 66px;
@@ -447,16 +516,16 @@ ul {
   height: 180px;
   margin-top: 10px;
   margin-bottom: 26px;
-  background: red;
 }
 
 .websitesContent .website img {
   width: 100%;
+  border: 2.25px solid rgba(202, 202, 202, 0.5);
 }
 
 .contact {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .contact .container .secondTitle h1 {
@@ -648,9 +717,9 @@ ul {
   .secondPage .container .secondContent .cardRight .cardContent .cardText h4 {
     font-size: 28px;
   }
-  .secondPage .container .secondContent .cardLeft .cardContent .cardText p,
-  .secondPage .container .secondContent .cardRight .cardContent .cardText p {
-    max-height: inherit;
+  .secondPage .container .secondContent .cardLeft .cardContent .cardText .details,
+  .secondPage .container .secondContent .cardRight .cardContent .cardText .details {
+    min-height: 160px;
   }
   .secondPage .container .secondContent .buttons {
     -webkit-box-orient: vertical;
@@ -670,10 +739,12 @@ ul {
     margin-bottom: 6px;
   }
   .secondPage .container .secondContent .cardLeft {
-    height: 500px;
+    height: 480px;
+    margin-top: 22px;
   }
   .secondPage .container .secondContent .cardRight {
-    height: 500px;
+    height: 480px;
+    margin-top: 22px;
   }
   .secondPage .container .secondContent .cardRight .cardContent .cardText {
     -webkit-box-ordinal-group: 3;
@@ -702,9 +773,14 @@ ul {
     margin: 0;
     border: none;
     width: 100%;
+    margin-bottom: 22px;
   }
   .mobile {
-    display: none;
+    display: none !important;
+  }
+  .mobileText {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -843,9 +919,14 @@ ul {
     margin: 0;
     border: none;
     width: 100%;
+    margin-bottom: 22px;
   }
   .mobile {
-    display: none;
+    display: none !important;
+  }
+  .mobileText {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -984,9 +1065,14 @@ ul {
     margin: 0;
     border: none;
     width: 100%;
+    margin-bottom: 22px;
   }
   .mobile {
-    display: none;
+    display: none !important;
+  }
+  .mobileText {
+    display: block;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

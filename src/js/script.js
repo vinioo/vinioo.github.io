@@ -10,11 +10,18 @@ window.addEventListener('scroll', () => {
   } else {
     navbar.classList.remove('transition')
   }
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (window.pageYOffset < 40 && !scrolled) {
+      window.scrollTo(0, window.innerHeight + 20)
+      scrolled = true;
+    }
+   } else {
+    if (window.pageYOffset < 18 && !scrolled) {
+      window.scrollTo(0, window.innerHeight)
+      scrolled = true;
+    }
+   }
 
-  if (window.pageYOffset < 18 && !scrolled) {
-    window.scrollTo(0, window.innerHeight)
-    scrolled = true;
-  }
 })
 
 seeMoreIcon.addEventListener('click', () => {
