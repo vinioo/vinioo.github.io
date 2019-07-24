@@ -73,6 +73,14 @@ ul {
 .bigIcon {
   width: 45px;
   height: 45px;
+  cursor: pointer;
+}
+
+.bigIcon:hover {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #line {
@@ -99,6 +107,10 @@ ul {
   display: none;
 }
 
+.mobile {
+  height: 100%;
+}
+
 .btnIcon {
   width: 22.5px;
   height: 22.5px;
@@ -116,6 +128,8 @@ ul {
   border-radius: 40px;
   border: none;
   cursor: pointer;
+  -webkit-transition: all .12s ease-in;
+  transition: all .12s ease-in;
 }
 
 .btn p {
@@ -130,6 +144,14 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.btn:hover {
+  background: #443cac;
+}
+
+.btn:hover p {
+  font-weight: 600;
 }
 
 .home {
@@ -232,6 +254,12 @@ ul {
 .homeFooter p {
   color: #f5f5f5;
   font-size: 12px;
+}
+
+.homeFooter #seeMore {
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
 }
 
 .transition {
@@ -348,6 +376,7 @@ ul {
   width: 100%;
   height: 100%;
   background: white;
+  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,8 +405,18 @@ ul {
   background: white;
 }
 
+.secondPage .secondContent .cardContent .gif {
+  opacity: 0;
+}
+
 .secondPage .secondContent .cardContent .cardImage img:hover {
   opacity: 0;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.secondPage .secondContent .cardContent .cardImage:hover .gif {
+  opacity: 1;
 }
 
 .secondPage .secondContent .cardContent .cardText {
@@ -450,6 +489,9 @@ ul {
   font-style: italic;
   font-weight: 500;
   border-bottom: 0.2px solid #dedede;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .secondPage .secondContent .cardRight .tags p {
@@ -505,7 +547,7 @@ ul {
           justify-content: center;
   padding: 12px 16px;
   background: white;
-  border-radius: 8px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -688,6 +730,12 @@ ul {
   .headerBox {
     width: 220px;
   }
+  .btn {
+    width: 105px;
+  }
+  .gif {
+    opacity: 1 !important;
+  }
   .homeContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -712,7 +760,7 @@ ul {
     text-align: center;
   }
   .homeFooter {
-    height: 30%;
+    height: 35%;
   }
   .homeFooter p {
     color: #f5f5f5;
@@ -765,7 +813,7 @@ ul {
   }
   .secondPage .container .secondContent .cardLeft .cardContent .cardText .details,
   .secondPage .container .secondContent .cardRight .cardContent .cardText .details {
-    min-height: 160px;
+    min-height: 150px;
   }
   .secondPage .container .secondContent .buttons {
     -webkit-box-orient: vertical;
@@ -782,14 +830,16 @@ ul {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
   }
   .secondPage .container .secondContent .cardLeft {
-    height: 480px;
+    height: 40%;
     margin-top: 22px;
   }
   .secondPage .container .secondContent .cardRight {
-    height: 480px;
+    height: 40%;
     margin-top: 22px;
   }
   .secondPage .container .secondContent .cardRight .cardContent .cardText {
@@ -838,6 +888,9 @@ ul {
   .headerBox {
     width: 240px;
   }
+  .gif {
+    opacity: 1 !important;
+  }
   .homeContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -862,7 +915,7 @@ ul {
     text-align: center;
   }
   .homeFooter {
-    height: 30%;
+    height: 35%;
   }
   .homeFooter p {
     color: #f5f5f5;
@@ -932,13 +985,15 @@ ul {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
   }
   .secondPage .container .secondContent .cardLeft {
-    height: 600px;
+    height: 45%;
   }
   .secondPage .container .secondContent .cardRight {
-    height: 600px;
+    height: 45%;
   }
   .secondPage .container .secondContent .cardRight .cardContent .cardText {
     -webkit-box-ordinal-group: 3;
@@ -987,6 +1042,9 @@ ul {
   .headerBox {
     width: 250px;
   }
+  .gif {
+    opacity: 1 !important;
+  }
   .homeContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1011,7 +1069,7 @@ ul {
     text-align: center;
   }
   .homeFooter {
-    height: 30%;
+    height: 35%;
   }
   .homeFooter p {
     color: #f5f5f5;
@@ -1081,13 +1139,15 @@ ul {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
   }
   .secondPage .container .secondContent .cardLeft {
-    height: 600px;
+    height: 45%;
   }
   .secondPage .container .secondContent .cardRight {
-    height: 600px;
+    height: 45%;
   }
   .secondPage .container .secondContent .cardRight .cardContent .cardText {
     -webkit-box-ordinal-group: 3;
@@ -1152,12 +1212,18 @@ ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .text img {
   border: none !important;
-  width: 45px;
-  height: 45px;
+  width: 45px !important;
+  height: 45px !important;
 }
 
 .website:hover .overlay {
