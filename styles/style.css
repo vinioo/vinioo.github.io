@@ -405,6 +405,11 @@ ul {
   background: white;
 }
 
+.secondPage .secondContent .cardContent video {
+  width: 100%;
+  height: 100%;
+}
+
 .secondPage .secondContent .cardContent .gif {
   opacity: 0;
 }
