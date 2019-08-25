@@ -300,7 +300,7 @@ $white: #f5f5f5;
       }
       .gif {
         opacity: 0;
-
+        height: 100%;
       }
       .cardImage {
         img:hover {
@@ -310,7 +310,10 @@ $white: #f5f5f5;
       }
       .cardImage:hover {
         .gif {
-          opacity: 1;
+          opacity: 1 !important;
+        }
+        img {
+          opacity: 0;
         }
       }
       .cardText {
