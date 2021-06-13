@@ -12,7 +12,7 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
-.main {
+.main-old {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -20,11 +20,11 @@ html {
   align-items: center;
   color: #626262;
 }
-.main a {
+.main-old a {
   text-decoration: none;
   font-weight: bold;
 }
-.main .icon {
+.main-old .icon {
   width: 32px;
   height: 32px;
   transition: all ease-out 0.5s;
